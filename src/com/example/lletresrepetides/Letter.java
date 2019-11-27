@@ -18,7 +18,7 @@ public class Letter {
 	}
 
 	public static void readList() {
-		List<Character> list = fillTheList();
+		List<Character> list = fillThefirstList();
 
 		for (Character character : list) {
 			if (character == 'a' || character == 'e' || character == 'i' || character == 'o' || 
@@ -33,23 +33,8 @@ public class Letter {
 
 	}
 
-	private static List<Character> fillTheList() {
-		List<Character> list = new ArrayList<>();
-
-		list.add('J');
-		list.add('u');
-		list.add('l');
-		list.add('i');
-		list.add('o');
-		list.add('0');
-		list.add('0');
-		list.add('7');
-		return list;
-		
-	}
-
 	public static void saveintoMap() {
-		List<Character> list = fillTheList();
+		List<Character> list = fillThefirstList();
 		Map<Character, Integer> map = new HashMap<>();
 		int count = 0;
 
@@ -69,7 +54,7 @@ public class Letter {
 	}
 
 	public static void fusionList() {
-		List<Character> list = fillTheList();
+		List<Character> list = fillThefirstList();
 		List<Character> list2 = fillTheSecondList();
 
 		System.out.println(list);
@@ -81,7 +66,22 @@ public class Letter {
 		System.out.println("FullName : " + list);
 	}
 
-	private static List<Character> fillTheSecondList() {
+	public static List<Character> fillThefirstList() {
+		List<Character> list = new ArrayList<>();
+		list.add('J');
+		list.add('u');
+		list.add('l');
+		list.add('i');
+		list.add('o');
+		list.add('0');
+		list.add('0');
+		list.add('7');
+		
+		return list;
+		
+	}
+
+	static List<Character> fillTheSecondList() {
 		List<Character> list = new ArrayList<>();
 		list.add('D');
 		list.add('e');
